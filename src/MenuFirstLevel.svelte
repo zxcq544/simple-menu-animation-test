@@ -5,7 +5,7 @@
     import { onMount } from "svelte";
     export let menu_item_top;
     export let menu_top_level_index;
-    export let is_first_level_open = true;
+    let is_first_level_open = true;
     let menu_item_height_el;
     function collapse_first_level() {
         if (is_first_level_open) {
